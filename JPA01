@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class JPA01{
+    public static void main(String[] args){
+        System.out.println("Please enter score:");
+        while(true){
+            Scanner a = new Scanner(System.in);
+            int b = a.nextInt();
+            if (b>=60){
+                System.out.println("You pass");
+                System.out.println("End");
+            }else{
+                System.out.println("End");
+            }
+        }
+    }
+}
