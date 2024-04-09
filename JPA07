@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class JPA07{
+    public static void main(String[] args){
+        while (true){
+            System.out.print("請輸入三個整數:");
+            Scanner a = new Scanner(System.in);
+            int b = a.nextInt();
+            int c = a.nextInt();
+            int d = a.nextInt();
+            if ((b+c)<d || (b+d)<c && (d+c)>b){
+                System.out.println("不可以構成三角形");
+            }else if(Math.pow(b,2)+Math.pow(c,2)==Math.pow(d,2) || Math.pow(b,2)+Math.pow(d,2)==Math.pow(c,2) || Math.pow(d,2)+Math.pow(c,2)==Math.pow(b,2)){
+                System.out.println("直角三角形");
+            }else if(Math.pow(b,2)+Math.pow(c,2)<Math.pow(d,2) || Math.pow(b,2)+Math.pow(d,2)<Math.pow(c,2) || Math.pow(d,2)+Math.pow(c,2)<Math.pow(b,2)){
+                System.out.println("鈍角三角形");
+            }else if(Math.pow(b,2)+Math.pow(c,2)>Math.pow(d,2) || Math.pow(b,2)+Math.pow(d,2)>Math.pow(c,2) || Math.pow(d,2)+Math.pow(c,2)>Math.pow(b,2)){
+                System.out.println("銳角三角形");
+            }
+        }
+    }
+}
