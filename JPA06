@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class JPA06{
+    public static void main(String[] args){
+        while(true){
+            System.out.print("Input Chinese score:");
+            Scanner a = new Scanner(System.in);
+            int b = a.nextInt();
+            System.out.print("Input English score:");
+            Scanner c = new Scanner(System.in);
+            int d = c.nextInt();
+            System.out.print("Input Math score:");
+            Scanner e = new Scanner(System.in);
+            int f = e.nextInt();
+            if (b>=60 && d>=60 && f>=60){
+                System.out.println("All pass.");
+            }else if(b<60 && d>60 && f>60){
+                System.out.println("Chinese failed.");
+            }else if(d<60 && b>60 && f>60){
+                System.out.println("English failed.");
+            }else if(f<60 && d>60 && b>60){
+                System.out.println("Math failed.");
+            }else if(b<60 && d<60 && f>=60){
+                System.out.println("Chinese failed.");
+                System.out.println("English failed.");
+            }else if(b<60 && d>=60 && f<60){
+                System.out.println("Chinese failed.");
+                System.out.println("Math failed.");
+            }else if(b>=60 && d<60 && f<60){
+                System.out.println("English failed.");
+                System.out.println("Math failed.");
+            }else{
+                System.out.println("Chinese failed.");
+                System.out.println("English failed.");
+                System.out.println("Math failed.");
+            }
+        }
+    }
+}
