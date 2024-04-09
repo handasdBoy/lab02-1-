@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class JPA08{
+    public static void main(String[] args){
+        while(true){
+            System.out.println("Input:");
+            Scanner a = new Scanner(System.in);
+            int b = a.nextInt();
+            if (b>=90){
+                System.out.println("Your grade is A");
+            }else if(90>b && b>=80){
+                System.out.println("Your grade is B");
+            }else if(80>b && b>=70){
+                System.out.println("Your grade is C");
+            }else if(70>b && b>=60){
+                System.out.println("Your grade is D");
+            }else if(60>b){
+                System.out.println("Your grade is F");
+            }
+        }
+    }
+}
